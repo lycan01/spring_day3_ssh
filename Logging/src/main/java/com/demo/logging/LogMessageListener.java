@@ -11,6 +11,7 @@ public class LogMessageListener implements MessageListener {
             // receive log event in your consumer
             LoggingEvent event = (LoggingEvent)((ActiveMQObjectMessage)message).getObject();
             System.out.println("Logging project: [" + event.getLevel() + "]: "+ event.getMessage());
+            System.out.println("hello world");
         } catch (Exception e) {
             e.printStackTrace();
         }
